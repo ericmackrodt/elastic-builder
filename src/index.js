@@ -9,6 +9,7 @@ const {
     GeoPoint,
     GeoShape,
     IndexedShape,
+    Query,
     Sort,
     Rescore,
     InnerHits,
@@ -555,6 +556,10 @@ exports.geoShape = constructorWrapper(GeoShape);
 
 exports.IndexedShape = IndexedShape;
 exports.indexedShape = constructorWrapper(IndexedShape);
+
+// Exposed in case it's need to create a new Query
+exports.Query = Query;
+exports.query = constructorWrapper(Query);
 
 exports.Sort = Sort;
 exports.sort = constructorWrapper(Sort);
